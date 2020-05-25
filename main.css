@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    box-shadow: 0 2px 6px -6px black;
+}
+
+.item {
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: dodgerblue;
+}
+
+.selected {
+    color: gray;
+}
+
+.name {
+    color: grey;
+    font-size: small;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 2px 6px -6px black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #222222;
+    color: #fff;
+    font-size: small;
+    text-align: start;
+    border-radius: 6px;
+    opacity: 90%;
+    padding: 5px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
